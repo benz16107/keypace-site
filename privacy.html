@@ -19,16 +19,11 @@
   p, li { margin: 0 0 14px; }
   a { color: #06c; text-decoration: none; }
   a:hover { text-decoration: underline; }
-  blockquote {
-    margin: 20px 0; padding: 16px 20px; background: #fff;
-    border: 1px solid #e5e5e7; border-radius: 14px; color: inherit;
-  }
   .back { display: inline-block; margin-top: 40px; font-size: 15px; }
   /* Dark overrides go last: a media query adds no specificity, so order decides. */
   @media (prefers-color-scheme: dark) {
     body { color: #f5f5f7; background: #000; }
     a { color: #2997ff; }
-    blockquote { background: #1c1c1e; border-color: #2c2c2e; }
     .updated { color: #86868b; }
   }
 </style>
@@ -36,34 +31,36 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="updated">Keypace for macOS &middot; Last updated 6 June 2026</p>
+  <p class="updated">Keypace for macOS &middot; Last updated 7 October 2026</p>
 
-  <p>Keypace is a typing-speed test for macOS. Your privacy is simple because the
-     app is built to keep everything on your own device.</p>
+  <p>Keypace is a typing-speed test for macOS. Your data stays on your Mac and,
+     if you use iCloud, in your own iCloud account.</p>
 
   <h2>What we collect</h2>
-  <p><strong>Nothing.</strong> Keypace does not collect, transmit, or sell any
-     personal data.</p>
+  <p><strong>Nothing.</strong> Keypace does not collect or sell any personal
+     data, and we run no server.</p>
   <ul>
     <li>The app has <strong>no account, no login, and no sign-up</strong>.</li>
-    <li>The app makes <strong>no network connections</strong> and contains
-        <strong>no analytics, tracking, or advertising</strong> of any kind.</li>
-    <li>All of your typing results, settings, streaks, and goals are stored
-        <strong>locally on your Mac</strong>. They never leave your device and
-        are never sent to us or any third party.</li>
+    <li>The app contains <strong>no analytics, tracking, or advertising</strong>
+        of any kind.</li>
+    <li>Your typing results, settings, streaks, and goals are stored
+        <strong>on your Mac</strong>. They are never sent to us.</li>
   </ul>
+
+  <h2>iCloud sync</h2>
+  <p>If your Mac is signed in to iCloud, Keypace syncs your test history through
+     your <strong>private iCloud database</strong> so it follows you across your
+     own Macs. Apple stores that copy under your Apple Account and Apple's privacy
+     terms. We cannot read it. Your settings stay on your Mac. You can turn this
+     off for Keypace in System Settings under iCloud.</p>
+
+  <h2>Purchases</h2>
+  <p>Keypace Pro is an optional one-time purchase. Apple processes it through the
+     App Store. We never see your payment details.</p>
 
   <h2>Data you can see and control</h2>
   <p>Your test history and personal stats live on your Mac. You can delete them
      at any time from within the app. Removing the app removes its local data.</p>
-
-  <blockquote>
-    A future update may add optional <strong>iCloud sync</strong> so your history
-    follows you across your own Macs. If and when that ships, the data would sync
-    only through <strong>your personal iCloud account</strong> under Apple's
-    privacy terms. We would still never receive or store it on any server of
-    ours. This policy will be updated before that feature is released.
-  </blockquote>
 
   <h2>Children's privacy</h2>
   <p>Keypace does not collect data from anyone, including children.</p>
