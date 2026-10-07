@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Keypace — a native Mac typing test</title>
+<title>Keypace, a native Mac typing test</title>
+<link rel="icon" href="icon.png">
 <style>
   :root { color-scheme: light dark; }
   * { box-sizing: border-box; }
@@ -16,7 +17,13 @@
   }
   main { max-width: 640px; margin: 0 auto; padding: 12vh 24px 16vh; }
   .logo { font-size: 56px; font-weight: 700; letter-spacing: -0.03em; margin: 0; }
-  .tag { font-size: 22px; color: #6e6e73; margin: 8px 0 40px; }
+  .tag { font-size: 22px; color: #6e6e73; margin: 8px 0 28px; }
+  .get {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px;
+    margin: 0 0 44px; font-size: 15px; color: #6e6e73;
+  }
+  .get img { display: block; width: auto; height: 48px; }
+  .shot { display: block; width: 100%; height: auto; margin: 0 0 44px; }
   @media (prefers-color-scheme: dark) { .tag { color: #a1a1a6; } }
   p { margin: 0 0 18px; }
   .card {
@@ -33,6 +40,7 @@
     .card { background: #1c1c1e; border-color: #2c2c2e; }
     a { color: #2997ff; }
     footer { color: #86868b; }
+    .get { color: #a1a1a6; }
   }
 </style>
 </head>
@@ -41,9 +49,22 @@
   <h1 class="logo">Keypace</h1>
   <p class="tag">A fast, private, native typing test for Mac.</p>
 
+  <p class="get">
+    <a href="https://apps.apple.com/app/keypace/id6777376987?mt=12">
+      <picture>
+        <source srcset="badge-white.svg" media="(prefers-color-scheme: dark)">
+        <img src="badge-black.svg" width="187" height="48" alt="Download on the Mac App Store">
+      </picture>
+    </a>
+    <span>Free. Requires macOS 26 or later.</span>
+  </p>
+
+  <img class="shot" src="screenshot-typing.webp" width="1280" height="868"
+       alt="The Keypace window during a typing test, 24 seconds in at 83 WPM, with one mistyped letter marked in red.">
+
   <p>Keypace is a clean, distraction-free typing-speed test built for macOS.
      Practice with words, quotes, real code, or your own text; track your WPM,
-     accuracy, and a daily streak — all stored privately on your own Mac.</p>
+     accuracy, and a daily streak, all stored privately on your own Mac.</p>
 
   <div class="card">
     <h2>Support</h2>
@@ -54,7 +75,7 @@
 
   <div class="card">
     <h2>Privacy</h2>
-    <p>Keypace collects no data — there's no account and no tracking. Read the
+    <p>Keypace collects no data. There's no account and no tracking. Read the
        full <a href="privacy.html">privacy policy</a>.</p>
   </div>
 
